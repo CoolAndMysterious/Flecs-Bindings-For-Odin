@@ -838,6 +838,11 @@ ecs_block_allocator_t :: struct {
 
 @(default_calling_convention="c")
 foreign lib {
+
+
+
+	@(link_name="FLECS_IDecs_f32_tID_")
+	ecs_f32_id: ecs_entity_t	
 	/** Initialize a block allocator.
 	*
 	* @param ba The block allocator to initialize.
